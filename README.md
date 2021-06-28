@@ -1,3 +1,5 @@
-#linux_lab1_p1與linux_lab1_p2為去查找每個process之virtual address是否對應到相同的physical address，藉由翻4層的page來證明
+# linux_lab1_p1與linux_lab1_p2
+去查找每個process之virtual address是否對應到相同的physical address，藉由翻4層的page來證明
 
-#clean跟enter wait queue顧名思義是創建wait queue與把wait queue內的process給叫醒
+# clean跟enter wait queue
+顧名思義是創建wait queue與把wait queue內的process給叫醒
