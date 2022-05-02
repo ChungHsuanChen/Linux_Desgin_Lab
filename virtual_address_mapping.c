@@ -4,6 +4,9 @@
 #include<linux/mm_types.h>
 #include<asm/current.h>
 #include<asm/pgtable.h>
+/*
+Module for proving the virtual kernel space of all preocess map to same physical address  
+*/
 int init_module(void){
 	int c=0,flag=0;
 	unsigned long eric[60] = {0};
@@ -24,7 +27,7 @@ int init_module(void){
 		c++;
 		
 		unsigned long vaddr=0xc0000000;
-		//printk(KERN_INFO "vaddr=0x%lx \n", vaddr);
+
 		int i=-1;
 		while(vaddr<=last){
 			i++;

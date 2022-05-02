@@ -5,7 +5,9 @@
 #include<string.h>
 #include<syscall.h>
 #include<sys/types.h>
-
+/*
+Clean queue test file
+*/
 
 pid_t gettid(void){
 	return syscall(__NR_gettid);
@@ -26,7 +28,7 @@ void main(){
 	char fil[]="file_";
 	count=0;
 	FILE *fptr;
-	strcat(fil,f);
+	strcat(fil,f);// fil=file_tid
 
 	fptr=fopen(fil,"w");
 	while(1){
